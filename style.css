@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--Eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr {
+    border: none; /* Remove default border */
+    border-top: 2px solid #ccc; /* Custom border style */
+    /* margin: 20px 0; Space above and below */
+    width: 100%; /* Set width */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+
+.container {
+    background-color: var(--Rose-White);
+    color: var(--Wenge-Brown);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 40px;
+    border-radius: 1rem;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 1rem;
+
+}
+
+h1 {
+    color: var(--Dark-Charcoal);
+    font-family: 'Young Serif';
+    font-size: 2.6em;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.rosy-card {
+    /* font-family: 'Outfit'; */
+    /* margin: 20px 0 20px 0; */
+    background-color: var(--Rose-White);
+    padding: 2.2em;
+    margin-bottom: -10px;
+    
+}
+
+.rosy-card h3 {
+    color: var(--Dark-Raspberry);
+}
+
+.rosy-card  ul {list-style-type: none; /* Remove default bullets */
+padding-left: 1em; /* Add space for custom bullets */
+}
+
+.rosy-card li::before {
+content: '•'; /* Add custom bullet */
+color: var(--Dark-Raspberry); /* Change bullet color */
+font-size: 1.4em; /* Adjust size if needed */
+margin-right: 1em; /* Space between bullet and text */
+}
+
+span {
+    font-weight: 700;
+}
+
+.rosy-card li {
+    color: var(--Wenge-Brown);
+}
+
+section h3 {
+    font-family: 'Young Serif';
+    color: var(--Nutmeg);
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+.list li::before {
+    content: '•'; /* Add custom bullet */
+    color: var(--Nutmeg); /* Change bullet color */
+    font-size: 1.4em; /* Adjust size if needed */
+    margin-right: 1em; /* Space between bullet and text */
+    }
+
+    ol {
+        counter-reset: item; /* Reset counter */
+        padding-left: 0; /* Remove default padding */
+    }
+
+    ol li {
+        list-style-type: none; /* Remove default numbering */
+        counter-increment: item; /* Increment counter */
+        position: relative; /* Position for pseudo-element */
+        padding-left: 2.5em; /* Space for custom numbers */
+        margin-bottom: 10px;    
+        color: var(--Wenge-Brown);
+    }
+
+    ol li::before {
+        content: counter(item) "."; /* Display counter */
+        font-weight: 700;
+        color: var(--Nutmeg); /* Change number color */
+        position: absolute; /* Position the number */
+        left: 0; /* Align to the left */
+    }
+
+    #intable {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    table .Discp {
+        color: var(--Nutmeg);
+        font-weight: 600;
+    }
+
+    table tr td {
+        padding: 10px 200px 10px 30px;
+        border-bottom: 1px solid var(--Light-Grey);
+    }
+
+    #lastone {
+        border-bottom: none;
+    }
